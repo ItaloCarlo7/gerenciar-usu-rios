@@ -2,8 +2,8 @@
 
 const usuarios =[
     {
-     propriedadeNome:'Matheus',
-     propriedadeEmail:'matheus7_14@gospel.com'   
+        propriedadeNome:'Matheus',
+        propriedadeEmail:'matheus7_14@gospel.com'   
     },
      {
         propriedadeNome:'Marcos',
@@ -16,15 +16,22 @@ const usuarios =[
       {
         propriedadeNome:'João',
         propriedadeEmail: 'joao2_3@gospel.com'
-    }];
+}];
 
 function retornarUsuarios(){
     return usuarios;
 
 };
-function adicionarNovoUsusario(nome) {
-    usuarios.push(nome);
+function adicionarNovoUsusario(usuario) {
+    usuarios.push(usuario);
 }
+
+/*capturarPropriedadeDoUsuario(0, 'nome);
+function capturarPropriedadeDoUsuario(indiceDoUsuario, propriedade) {
+    return usuarios.at(indiceDoUsuario) [propriedade];
+
+}    */
+
 
 module.exports = {
     retornarUsuarios,
